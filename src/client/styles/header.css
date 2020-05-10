@@ -1,0 +1,53 @@
+/* Header & Navigation Styles */
+
+header * {
+    color: #ffffff;    
+}
+.navbar {
+    background-image: linear-gradient(to right,#009cde, #005fa7);
+    padding: 0 40px;
+}
+.navbar-brand {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.navbar-nav a.nav-link {
+    font-size: 1.15rem;    
+    padding: 1.8rem !important;
+}
+.navbar-nav a.nav-link:last-child {
+    padding-right: 0 !important;
+}
+
+
+
+/*L - #009cde*/
+/*R - #005fa7*/
+
+/* Active Tab BG - #0070ba 
+button tab group border - #b7bcbf
+
+*/
+/*Heading blue - #005ea6*/
+/* Top 2 section blue txt - #0070ba
+light blue txt - #0070ba
+container BG - #f5f7fa
+section border - #bfdbee
+dark grey font color - #5d5f60
+light grey font color - #656869
+green txt - #299976
+red txt - #d20000
+vertical separator border - #dfedf6
+
+.icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+.icon.user {
+    background: url('../images/user.svg') no-repeat;
+}
+.icon.question {
+    background: url('../images/question.svg') no-repeat;
+}
+*/

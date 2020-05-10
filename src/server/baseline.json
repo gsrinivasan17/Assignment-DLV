@@ -1,0 +1,14 @@
+[
+    { "col": "MoM", "value": "+5.5%", "status": "red" },
+    { "col": "MEC", "value": "" },
+    { "col": "MoM", "value": "+2.5%", "status": "green" },
+    { "col": "MEC", "value": "" },
+    { "col": "MoM", "value": "+2.5%", "status": "green" },
+    { "col": "MEC", "value": "" },
+    { "col": "MoM", "value": "+2.5%", "status": "green" },
+    { "col": "MEC", "value": "" },
+    { "col": "MoM", "value": "+2.3%", "status": "green" },
+    { "col": "MEC", "value": "" },
+    { "col": "MoM", "value": "+3.4%", "status": "green" },
+    { "col": "MEC", "value": "" }
+]

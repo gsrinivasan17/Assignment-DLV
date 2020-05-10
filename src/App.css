@@ -1,0 +1,32 @@
+body {
+    background: #f5f7fa;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+* {
+    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #6c7378;
+}
+.wrapper .main, .filters {
+    padding: 0 40px;
+}
+.filters {
+    background: #ffffff;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.btn-secondary.active,
+.btn-secondary:active,
+.btn-secondary.focus,
+.btn-secondary:focus {
+    background: #ffffff !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    color: #b6d1e2 !important;
+}
