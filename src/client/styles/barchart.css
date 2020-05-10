@@ -1,5 +1,7 @@
+/* Bar chart styles */
+
 svg {
-    display: grid;
     align-content: center;
+    display: grid;    
     margin: 4px 0 0 10px;
 }

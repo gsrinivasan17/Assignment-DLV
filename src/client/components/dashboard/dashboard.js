@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Barchart from '../../utilities/barchart.js';
 import * as utils from '../../utilities/common.js';
+
 import data from '../../../server/data.json';
 import baseLineData from '../../../server/baseline.json';
+
 import '../../styles/dashboard.css';
 
+//Import Dashboard data
 const dataList = data;
 const dataBaseLineList = baseLineData;
 
@@ -12,7 +15,14 @@ class Dashboard extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+    };
+  }
+
+  getWidth() {
+    const min = 20;
+    const max = 100;    
+    return Math.round(min + Math.random() * (max - min)) + '%';
   }
 
   render() {
@@ -72,30 +82,30 @@ class Dashboard extends Component {
           { dataList.map((row, i) => {
               return (
                 <div className="grid-row" key={i}>
-                  <div><span>{utils.getWidth(row.txn_mth)}</span></div>
+                  <div><span>{utils.getTxnMonth(row.txn_mth)}</span></div>
                   <div>
                     <span>{row.GROSS}</span>
-                    <Barchart chartInput={row.GROSS}></Barchart>
+                    <Barchart chartWidth={this.getWidth()}></Barchart>
                   </div>
                   <div>
                     <span>{row.net}</span>
-                    <Barchart></Barchart>
+                    <Barchart chartWidth={this.getWidth()}></Barchart>
                   </div>
                   <div>
                     <span>{row.nbc}</span>
-                    <Barchart></Barchart>
+                    <Barchart chartWidth={this.getWidth()}></Barchart>
                   </div>
                   <div>
                     <span>{row.nbr}</span>
-                    <Barchart></Barchart>
+                    <Barchart chartWidth={this.getWidth()}></Barchart>
                   </div>
                   <div>
                     <span>{row.credit}</span>
-                    <Barchart></Barchart>
+                    <Barchart chartWidth={this.getWidth()}></Barchart>
                   </div>
                   <div>
                     <span>{row.debit}</span>
-                    <Barchart></Barchart>
+                    <Barchart chartWidth={this.getWidth()}></Barchart>
                   </div>
                 </div>
               );

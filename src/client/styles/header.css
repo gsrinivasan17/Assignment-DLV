@@ -1,8 +1,9 @@
 /* Header & Navigation Styles */
 
 header * {
-    color: #ffffff;    
+    color: #ffffff;
 }
+
 .navbar {
     background-image: linear-gradient(to right,#009cde, #005fa7);
     padding: 0 40px;

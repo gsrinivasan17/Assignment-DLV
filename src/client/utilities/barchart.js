@@ -5,19 +5,14 @@ class Barchart extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {};
-  }
-
-  getWidth() {
-    const min = 20;
-    const max = 100;
-    return Math.round(min + Math.random() * (max - min)) + '%';
+    this.state = {
+    };
   }
 
   render() {
 
     let chartDimension = {
-        width: this.getWidth(),
+        width: this.props.chartWidth,
         height: '10px',
     };
 

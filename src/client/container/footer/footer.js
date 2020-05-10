@@ -3,7 +3,7 @@ import '../../styles/footer.css';
 
 class Footer extends Component {
   render() {
-    return <footer className="footer"><h3>Footer</h3></footer>;
+    return <footer className="footer"><h3>Footer Content here...</h3></footer>;
   }
 }
 

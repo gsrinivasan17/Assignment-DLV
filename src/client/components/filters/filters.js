@@ -4,6 +4,7 @@ import '../../styles/filters.css';
 class Filters extends Component {
   render() {
     return (
+      // Top filters content starts
       <div className="filters">
         <div className="wrapper">
           <div className="d-flex align-items-center">

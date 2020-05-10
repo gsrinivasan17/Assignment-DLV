@@ -1,3 +1,5 @@
+/* Common app styles */
+
 body {
     background: #f5f7fa;
     height: 100vh;
@@ -30,3 +32,13 @@ a:hover {
     border: 0 !important;
     color: #b6d1e2 !important;
 }
+
+.lborder {
+    border-left: 1px solid #dfedf6;
+}
+.green {
+    color:#299976
+}
+.red {
+    color:#d20000;
+}  
