@@ -9,10 +9,10 @@ import './App.css';
 
 function App() {
   return (
-    <div className="wrapper"> {/* App conatiner */}
+    <div className="wrapper"> {/* App container */}
       <Header></Header> {/* Header & Navigation */}
       <Filters></Filters>
-      <Main></Main> {/* Main page conatiner */}
+      <Main></Main> {/* Main page container */}
       {/* <Footer></Footer> */}
     </div>
   );
