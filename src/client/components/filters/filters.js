@@ -20,7 +20,7 @@ class Filters extends Component {
               <span className="text mr-5">Date Cut-off: 15 Jan 2019</span>
               <span className="text mr-4">View</span>
               <div className="btn-group btn-group-sm">
-                <button type="button" className="btn btn-primary">Chart</button>
+                <button type="button" className="btn btn-primary active">Chart</button>
                 <button type="button" className="btn btn-primary">Pivot</button>
               </div>
             </div>
@@ -28,7 +28,7 @@ class Filters extends Component {
           <div className="d-flex align-items-center">
             <div className="column">
               <div className="btn-group btn-group-sm">
-                <button type="button" className="btn btn-primary">bps</button>
+                <button type="button" className="btn btn-primary active">bps</button>
                 <button type="button" className="btn btn-primary">dollar</button>
                 <button type="button" className="btn btn-primary">count</button>
               </div>

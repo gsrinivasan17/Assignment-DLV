@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import * as Icon from 'react-bootstrap-icons';
 import Barchart from '../../utilities/barchart.js';
 import * as utils from '../../utilities/common.js';
 
@@ -35,32 +36,32 @@ class Dashboard extends Component {
           </div>
           <div>
             <div><h4>GROSS LOSS</h4></div>
-            <div><h5>57.53 <small>bps</small></h5></div>
+            <div><h5>57.53 <small>bps</small><Icon.ArrowDown  color="#d20000" size={20} /></h5></div>
           </div>
           <div>
             <div><h4>NET LOSS</h4></div>
-            <div><h5>12.81 <small>bps</small></h5></div>
+            <div><h5>12.81 <small>bps</small><Icon.ArrowUp  color="#299976" size={20} /></h5></div>
           </div>
           <div className="grid50">
             <div className="colspan text-center p-0"><h4>NEGATIVE BALANCE</h4></div>
             <div className="lborder">
               <span className="sub-text">CREATION</span>
-              <span><h5>9.45 <small>bps</small></h5></span>
+              <span><h5>9.45 <small>bps</small><Icon.ArrowUp  color="#299976" size={20} /></h5></span>
             </div>
             <div className="lborder">
               <span className="sub-text">RECOVERED</span>
-              <span><h5>2.36 <small>bps</small></h5></span>
+              <span><h5>2.36 <small>bps</small><Icon.ArrowUp  color="#299976" size={20} /></h5></span>
             </div>
           </div>
           <div className="grid50">
             <div className="colspan text-center p-0"><h4>DIRECT PAYOUT</h4></div>
             <div className="lborder">
               <span className="sub-text">CREDIT</span>
-              <span><h5>0.45 <small>bps</small></h5></span>
+              <span><h5>0.45 <small>bps</small><Icon.ArrowUp  color="#299976" size={20} /></h5></span>
             </div>
             <div className="lborder">
               <span className="sub-text">DEBIT</span>
-              <span><h5>0.55 <small>bps</small></h5></span>
+              <span><h5>0.55 <small>bps</small><Icon.ArrowUp  color="#299976" size={20} /></h5></span>
             </div>
           </div>
         </div>

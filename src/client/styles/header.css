@@ -14,12 +14,14 @@ header * {
 }
 .navbar-nav a.nav-link {
     font-size: 1.15rem;    
-    padding: 1.8rem !important;
+    padding: 1.8rem 1.1rem !important;
 }
-.navbar-nav a.nav-link:last-child {
-    padding-right: 0 !important;
+.header-icons {
+    margin-left: 30px;
 }
-
+.header-icons li {
+    padding: 0 5px;
+}
 
 
 /*L - #009cde*/

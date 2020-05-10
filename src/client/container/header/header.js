@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import * as Icon from 'react-bootstrap-icons';
 import '../../styles/header.css';
 
 class Header extends Component {
@@ -31,11 +32,11 @@ class Header extends Component {
             </li>
           </ul>
 
-          {/* <ul className="nav navbar-nav navbar-right">
-          <li><a href="/"><span className="icon notification"></span></a></li>
-            <li><a href="/"><span className="icon question"></span></a></li>
-            <li><a href="/"><span className="icon user"></span></a></li>
-          </ul> */}
+          <ul className="nav navbar-nav navbar-right header-icons ml-4">
+              <li><Icon.Bell  color="white" size={20} /></li>
+              <li><Icon.QuestionCircle color="white" size={20} /></li>
+              <li><Icon.Person  color="white" size={20} /></li>
+          </ul>
         </nav>
       </header>
     );
