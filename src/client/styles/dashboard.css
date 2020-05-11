@@ -114,3 +114,31 @@ h5 svg {
 .main-grid > div > div {
   padding: 0 20px;
 }
+
+.download-icons {
+  position: fixed;  
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.download-icons ul {
+  display: flex; 
+  flex-direction: row;  
+  list-style: none;
+  padding: 0;   
+  transform: translateX(120px);
+  transition: .3s ease-out;
+}
+.download-icons ul:hover {
+  transform: translateX(0);
+}
+.download-icons ul li {
+    background: #0070ba;
+    cursor: pointer;
+    padding: 15px;
+}
+.download-icons ul li:first-child {
+  background: #0ba2e2;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}

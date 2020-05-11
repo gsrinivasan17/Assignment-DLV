@@ -41,4 +41,87 @@ a:hover {
 }
 .red {
     color:#d20000;
-}  
+}
+
+/* Custom radio button styles */
+.radio-container,
+.checkbox-container {
+    padding: 15px 20px;
+}
+.radio-container h6,
+.checkbox-container h6 {
+    font-size: 0.95rem;
+}
+.radio,
+.checkbox {
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  }
+  .radio input,
+  .checkbox input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+  }
+  .radio:hover input ~ .checkmark,
+  .checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .radio input:checked ~ .checkmark,
+  .checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .radio .checkmark:after,
+  .checkbox .checkmark:after {
+    content: "";    
+    display: none;
+    position: absolute;
+  }
+  .radio input:checked ~ .checkmark:after,
+  .checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .radio .checkmark,
+  .checkbox .checkmark {
+    background-color: #eee;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;       
+  }
+  .radio .checkmark {
+    border-radius: 50%;
+  }
+  .radio .checkmark:after {
+    background: white;
+    border-radius: 50%;
+    height: 8px;
+    left: 6px;
+    top: 6px;    
+    width: 8px;
+  }
+  .checkbox .checkmark:after {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    height: 10px;
+    left: 8px;
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 5px;
+  }

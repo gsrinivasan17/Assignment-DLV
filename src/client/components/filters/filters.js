@@ -34,34 +34,81 @@ class Filters extends Component {
               </div>
             </div>
             <div className="column text-right">
-            <div className="filter dropdown mr-5">
-                <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div className="filter dropdown mr-5">
+                <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="arrivalDay" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Arrival Day (13)
-                </button>
-                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a className="dropdown-item" href="/">Option 1</a>
-                  <a className="dropdown-item" href="/">Option 2</a>
-                  <a className="dropdown-item" href="/">Option 3</a>
+                  </button>
+                <div className="dropdown-menu" aria-labelledby="arrivalDay">
+                  <div className="radio-container">
+                    <h6>TYPE</h6>
+                    <label className="radio">Arrival Day
+                      <input type="radio" defaultChecked name="arrivalday" />
+                      <span className="checkmark"></span>
+                    </label>
+                    <label className="radio">Business Arrival Day
+                      <input type="radio" name="arrivalday" />
+                      <span className="checkmark"></span>
+                    </label>
+                  </div>
+                  <div className="radio-container mt-4">
+                    <h6>MONTHS</h6>
+                    <label className="radio">Jan 19 (13)
+                      <input type="radio" defaultChecked name="businessarrivalday" />
+                      <span className="checkmark"></span>
+                    </label>
+                    <label className="radio">Dec 18 (32)
+                      <input type="radio" name="businessarrivalday" />
+                      <span className="checkmark"></span>
+                    </label>
+                    <label className="radio">Nov 18 (45)
+                      <input type="radio" name="businessarrivalday" />
+                      <span className="checkmark"></span>
+                    </label>
+                  </div>                  
                 </div>
               </div>
-            <div className="filter dropdown mr-5">
-                <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div className="filter dropdown mr-5">
+                <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="momCamparison" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   MoM Camparison
                 </button>
-                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a className="dropdown-item" href="/">Option 1</a>
-                  <a className="dropdown-item" href="/">Option 2</a>
-                  <a className="dropdown-item" href="/">Option 3</a>
+                <div className="dropdown-menu" aria-labelledby="momCamparison">
+                  <div className="radio-container">
+                    <h6>BASELINE</h6>
+                    <label className="radio">3 Months (Default)
+                      <input type="radio" defaultChecked name="momcomparison" />
+                      <span className="checkmark"></span>
+                    </label>
+                    <label className="radio">6 Months
+                      <input type="radio" name="momcomparison" />
+                      <span className="checkmark"></span>
+                    </label>
+                  </div>
+
+                  <div className="checkbox-container pt-0">
+                    <h6>MONTHS</h6>
+                    <label className="checkbox">Dec 18
+                      <input type="checkbox" defaultChecked name="months" />
+                      <span className="checkmark"></span>
+                    </label>
+                    <label className="checkbox">Nov 18
+                      <input type="checkbox" defaultChecked name="months" />
+                      <span className="checkmark"></span>
+                    </label>
+                    <label className="checkbox">Oct 18
+                      <input type="checkbox" name="months" />
+                      <span className="checkmark"></span>
+                    </label>
+                  </div>
                 </div>
               </div>
               <div className="filter dropdown">
-                <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="filters" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Filters
                 </button>
-                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a className="dropdown-item" href="/">Option 1</a>
-                  <a className="dropdown-item" href="/">Option 2</a>
-                  <a className="dropdown-item" href="/">Option 3</a>
+                <div className="dropdown-menu dropdown-menu-right" aria-labelledby="filters">
+                  <div className="radio-container">
+                    <h6>FILTERS CONTENT HERE</h6>
+                  </div>
                 </div>
               </div>
             </div>

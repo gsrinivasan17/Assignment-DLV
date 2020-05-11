@@ -29,6 +29,7 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
+        {/* Top section */}
         <div className="grid-container mt-4">
           <div>
             <div><h3>TXN <br/>MONTH</h3></div>
@@ -66,6 +67,7 @@ class Dashboard extends Component {
           </div>
         </div>
 
+        {/* Baseline Difference */}
         <div className="grid-container baseline mt-2">
           <div>Baseline <br />Difference</div>
           { dataBaseLineList.map((row, i) => {
@@ -79,6 +81,7 @@ class Dashboard extends Component {
           }
         </div>
 
+          {/* Main grid content */}
         <div className="main-grid mt-2">
           { dataList.map((row, i) => {
               return (
@@ -113,7 +116,15 @@ class Dashboard extends Component {
             })
           }
         </div>
-
+        
+        {/* Download icons */}
+        <div className="download-icons">
+          <ul>
+            <li><Icon.Download  color="white" size={20} /></li>
+            <li><Icon.FileText color="white" size={20} /></li>
+            <li><Icon.Camera  color="white" size={20} /></li>
+          </ul>
+        </div>
       </div>
     );
   }
