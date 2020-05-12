@@ -20,11 +20,12 @@ class Dashboard extends Component {
     };
   }
 
-  getWidth() {
-    const min = 20;
-    const max = 100;    
-    return Math.round(min + Math.random() * (max - min)) + '%';
-  }
+  //Getting chart width & manupulations
+  get _getWidth() {
+    const MIN_VALUE = 20;
+    const MAX_VALUE = 100;
+    return Math.round(MIN_VALUE + Math.random() * (MAX_VALUE - MIN_VALUE)) + '%';
+  };
 
   render() {
     return (
@@ -89,27 +90,27 @@ class Dashboard extends Component {
                   <div><span>{utils.getTxnMonth(row.txn_mth)}</span></div>
                   <div>
                     <span>{row.GROSS}</span>
-                    <Barchart chartWidth={this.getWidth()}></Barchart>
+                    <Barchart chartWidth={this._getWidth}></Barchart>
                   </div>
                   <div>
                     <span>{row.net}</span>
-                    <Barchart chartWidth={this.getWidth()}></Barchart>
+                    <Barchart chartWidth={this._getWidth}></Barchart>
                   </div>
                   <div>
                     <span>{row.nbc}</span>
-                    <Barchart chartWidth={this.getWidth()}></Barchart>
+                    <Barchart chartWidth={this._getWidth}></Barchart>
                   </div>
                   <div>
                     <span>{row.nbr}</span>
-                    <Barchart chartWidth={this.getWidth()}></Barchart>
+                    <Barchart chartWidth={this._getWidth}></Barchart>
                   </div>
                   <div>
                     <span>{row.credit}</span>
-                    <Barchart chartWidth={this.getWidth()}></Barchart>
+                    <Barchart chartWidth={this._getWidth}></Barchart>
                   </div>
                   <div>
                     <span>{row.debit}</span>
-                    <Barchart chartWidth={this.getWidth()}></Barchart>
+                    <Barchart chartWidth={this._getWidth}></Barchart>
                   </div>
                 </div>
               );

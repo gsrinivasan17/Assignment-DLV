@@ -7,7 +7,10 @@ class Header extends Component {
     return (
       <header className="header">
         <nav className="navbar navbar-expand-sm">
+          {/* Brand Name */}
           <a className="navbar-brand" href="/">BA Central</a>
+
+          {/* Main menu */}
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <a className="nav-link" href="/">Home</a>
@@ -32,6 +35,7 @@ class Header extends Component {
             </li>
           </ul>
 
+          {/* Right profiles icons section */}
           <ul className="nav navbar-nav navbar-right header-icons ml-4">
               <li><Icon.Bell  color="white" size={20} /></li>
               <li><Icon.QuestionCircle color="white" size={20} /></li>

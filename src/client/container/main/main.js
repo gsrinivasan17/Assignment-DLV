@@ -4,8 +4,9 @@ import Dashboard from '../../components/dashboard';
 import '../../styles/main.css';
 
 class Main extends Component {
-  render() {
+  render() {    
     return (
+      //Common main container for all pages
       <div className="main">
         {/* Dashboard Content Included */}
         <Dashboard></Dashboard>

@@ -7,6 +7,8 @@ class Filters extends Component {
       // Top filters content starts
       <div className="filters">
         <div className="wrapper">
+
+          {/* Title with Breadcrumb */}
           <div className="d-flex align-items-center">
             <div className="column">
               <h2>Daily Loss Vintage - Actuals</h2>
@@ -16,6 +18,8 @@ class Filters extends Component {
                 <li>DLV</li>
               </ul>
             </div>
+
+            {/* Right chart/pivot button group */}
             <div className="column text-right">
               <span className="text mr-5">Date Cut-off: 15 Jan 2019</span>
               <span className="text mr-4">View</span>
@@ -25,7 +29,10 @@ class Filters extends Component {
               </div>
             </div>
           </div>
+
           <div className="d-flex align-items-center">
+
+            {/* Left bps/dollar/count button group */}
             <div className="column">
               <div className="btn-group btn-group-sm">
                 <button type="button" className="btn btn-primary active">bps</button>
@@ -33,6 +40,8 @@ class Filters extends Component {
                 <button type="button" className="btn btn-primary">count</button>
               </div>
             </div>
+
+            {/* Right filters dropdowns */}
             <div className="column text-right">
               <div className="filter dropdown mr-5">
                 <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="arrivalDay" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,6 +76,7 @@ class Filters extends Component {
                   </div>                  
                 </div>
               </div>
+
               <div className="filter dropdown mr-5">
                 <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="momCamparison" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   MoM Camparison
@@ -101,6 +111,7 @@ class Filters extends Component {
                   </div>
                 </div>
               </div>
+              
               <div className="filter dropdown">
                 <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="filters" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Filters
