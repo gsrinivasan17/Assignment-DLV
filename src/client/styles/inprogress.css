@@ -1,0 +1,9 @@
+.inprogress {
+    background: #ffffff;
+    border: 1px #dfedf6 solid;
+    border-radius: 5px;
+    color: #0070ba;
+    padding: 25px;
+    margin: 40px;
+    text-align: center;
+}

@@ -2,7 +2,6 @@
 
 body {
     background: #f5f7fa;
-    height: 100vh;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -11,9 +10,6 @@ body {
     font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
     font-size: 0.8rem;
     color: #6c7378;
-}
-.wrapper .main, .filters {
-    padding: 0 40px;
 }
 .filters {
     background: #ffffff;

@@ -29,9 +29,9 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <div>
+      <section>
         {/* Top section */}
-        <div className="grid-container mt-4">
+        <article className="grid-container mt-4">
           <div>
             <div><h3>TXN <br/>MONTH</h3></div>
             <div><h3>JAN 19</h3></div>
@@ -66,10 +66,10 @@ class Dashboard extends Component {
               <span><h5>0.55 <small>bps</small><Icon.ArrowUp  color="#299976" size={20} /></h5></span>
             </div>
           </div>
-        </div>
+        </article>
 
         {/* Baseline Difference */}
-        <div className="grid-container baseline mt-2">
+        <article className="grid-container baseline mt-2">
           <div>Baseline <br />Difference</div>
           { dataBaseLineList.map((row, i) => {
               return (
@@ -80,10 +80,10 @@ class Dashboard extends Component {
               );
             })
           }
-        </div>
+        </article>
 
           {/* Main grid content */}
-        <div className="main-grid mt-2">
+        <article className="main-grid mt-2">
           { dataList.map((row, i) => {
               return (
                 <div className="grid-row" key={i}>
@@ -116,17 +116,17 @@ class Dashboard extends Component {
               );
             })
           }
-        </div>
+        </article>
         
         {/* Download icons */}
-        <div className="download-icons">
+        <aside className="download-icons">
           <ul>
             <li><Icon.Download  color="white" size={20} /></li>
             <li><Icon.FileText color="white" size={20} /></li>
             <li><Icon.Camera  color="white" size={20} /></li>
           </ul>
-        </div>
-      </div>
+        </aside>
+      </section>
     );
   }
 }

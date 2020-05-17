@@ -6,7 +6,12 @@ header * {
 
 .navbar {
     background-image: linear-gradient(to right,#009cde, #005fa7);
+    left: 0;
     padding: 0 40px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 11;
 }
 .navbar-brand {
     font-weight: 500;
@@ -22,35 +27,3 @@ header * {
 .header-icons li {
     padding: 0 5px;
 }
-
-
-/*L - #009cde*/
-/*R - #005fa7*/
-
-/* Active Tab BG - #0070ba 
-button tab group border - #b7bcbf
-
-*/
-/*Heading blue - #005ea6*/
-/* Top 2 section blue txt - #0070ba
-light blue txt - #0070ba
-container BG - #f5f7fa
-section border - #bfdbee
-dark grey font color - #5d5f60
-light grey font color - #656869
-green txt - #299976
-red txt - #d20000
-vertical separator border - #dfedf6
-
-.icon {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-}
-.icon.user {
-    background: url('../images/user.svg') no-repeat;
-}
-.icon.question {
-    background: url('../images/question.svg') no-repeat;
-}
-*/

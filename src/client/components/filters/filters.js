@@ -5,8 +5,8 @@ class Filters extends Component {
   render() {
     return (
       // Top filters content starts
-      <div className="filters">
-        <div className="wrapper">
+      <section className="filters">
+        <article className="wrapper">
 
           {/* Title with Breadcrumb */}
           <div className="d-flex align-items-center">
@@ -124,8 +124,8 @@ class Filters extends Component {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
     );
   }
 }

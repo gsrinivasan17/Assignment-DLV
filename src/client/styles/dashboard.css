@@ -70,11 +70,6 @@ h5 svg {
   font-weight: 700;
 }
 
-
-/* .main-grid {
-  max-height: calc(100vh - 460px);
-  overflow-y: auto;
-} */
 .main-grid > .grid-row {
   display: grid;
   grid-template-columns: 13% 14.5% 14.5% 14.5% 14.5% 14.5% 14.5%;
